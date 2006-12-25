@@ -1,6 +1,6 @@
 " Vim color file
 " Maintainer:   Mingbai <mbbill AT gmail DOT com>
-" Last Change:  2006-10-26 22:07:58
+" Last Change:  2006-12-24 20:09:09
 
 set background=dark
 if version > 580
@@ -33,20 +33,28 @@ hi NonText      guifg=cyan           gui=none
 hi Question     guifg=springgreen    gui=none
 hi Search       guifg=gray80         guibg=#445599  gui=none
 hi SpecialKey   guifg=cyan           gui=none
-hi StatusLine   guifg=black          guibg=#c2bfa5  gui=none
+hi StatusLine   guifg=black          guibg=#c2bfa5  gui=bold
 hi StatusLineNC guifg=grey           guibg=gray40   gui=none
 hi Title        guifg=indianred      gui=none
-hi Visual       guifg=gray17         guibg=tan3     gui=none
+hi Visual       guifg=gray17         guibg=tan1     gui=none
 hi WarningMsg   guifg=salmon         gui=none
 hi Pmenu        guifg=white          guibg=#445599  gui=none
 hi PmenuSel     guifg=#445599        guibg=gray
 hi WildMenu     guifg=gray           guibg=gray17   gui=none
+hi MatchParen	guifg=cyan           guibg=NONE     gui=bold
+hi DiffAdd      guifg=black          guibg=wheat1
+hi DiffChange   guifg=black          guibg=skyblue1
+hi DiffText     guifg=black          guibg=hotpink1  gui=none
+hi DiffDelete   guibg=gray45         guifg=black     gui=none
+
+
 
 " syntax highlighting groups
-hi Comment      guifg=PaleGreen3     gui=none
+hi Comment      guifg=PaleGreen3     gui=italic
 hi Constant     guifg=salmon         gui=none
-hi Identifier   guifg=SteelBlue      gui=none
-hi Statement    guifg=Skyblue        gui=none
+hi Identifier   guifg=Skyblue        gui=none
+hi Function     guifg=Skyblue        gui=none
+hi Statement    guifg=lightgoldenrod2 gui=none
 hi PreProc      guifg=PaleVioletRed2 gui=none
 hi Type         guifg=tan1           gui=none
 hi Special      guifg=aquamarine2    gui=none
